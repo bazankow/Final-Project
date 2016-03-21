@@ -1,0 +1,14 @@
+package com.cisc181.core;
+
+public class PersonException extends Exception{
+	private Person person;
+
+	public PersonException(Person person) {
+		super("Invalid Person" + person.getLastName());
+		this.person = person;
+	}
+	
+	public Person getperson(){
+		return person;
+	}
+}
